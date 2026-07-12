@@ -13,10 +13,7 @@ Built as my first Flutter project while learning the fundamentals of state manag
 - ✅ Local data persistence using `shared_preferences` — tasks and username are saved across sessions
 - ✅ Clean architecture with separated models, services, and screens
 
-## Screenshots
 
-<!-- Add a screenshot or two here, e.g.: -->
-<!-- ![Home screen](screenshots/home.png) -->
 
 ## Tech Stack
 
