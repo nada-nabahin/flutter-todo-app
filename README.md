@@ -1,16 +1,68 @@
-# todo_app
+# 📝 Flutter Todo App
 
-A new Flutter project.
+A simple, clean todo app built with Flutter, featuring local data persistence so your tasks are saved even after refreshing or closing the app.
+
+Built as my first Flutter project while learning the fundamentals of state management and local storage.
+
+## Features
+
+- ✅ Add, edit, and delete tasks
+- ✅ Mark tasks as complete/incomplete
+- ✅ Clear all completed tasks at once
+- ✅ Personalized greeting based on time of day
+- ✅ Local data persistence using `shared_preferences` — tasks and username are saved across sessions
+- ✅ Clean architecture with separated models, services, and screens
+
+## Screenshots
+
+<!-- Add a screenshot or two here, e.g.: -->
+<!-- ![Home screen](screenshots/home.png) -->
+
+## Tech Stack
+
+- **Flutter** — UI framework
+- **shared_preferences** — local key-value storage for persisting tasks and user data
+
+## Project Structure
+lib/
+models/
+todo.dart              # Todo data model
+services/
+todo_storage_service.dart   # Handles saving/loading tasks
+screens/
+welcome_screen.dart    # Name entry screen
+home_screen.dart       # Main todo list screen
+widgets/
+todo_item.dart         # Individual task UI component
+theme/
+app_colors.dart        # App color palette
+main.dart                # App entry point
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Clone the repo:
+```bash
+   git clone https://github.com/nada-nabahin/flutter-todo-app.git
+```
+2. Install dependencies:
+```bash
+   flutter pub get
+```
+3. Run the app (web):
+```bash
+   flutter run -d chrome
+```
 
-A few resources to get you started if this is your first Flutter project:
+## What I Learned
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Managing state in a StatefulWidget with `setState`
+- Persisting data locally on Flutter Web using `shared_preferences`
+- Serializing/deserializing custom objects with `toJson`/`fromJson`
+- Structuring a Flutter project into models, services, and screens for cleaner, more maintainable code
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Future Improvements
+
+- [ ] Task categories or tags
+- [ ] Due dates and reminders
+- [ ] Dark/light theme toggle
+- [ ] "Change name" option instead of permanent storage
