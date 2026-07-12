@@ -21,19 +21,22 @@ Built as my first Flutter project while learning the fundamentals of state manag
 - **shared_preferences** — local key-value storage for persisting tasks and user data
 
 ## Project Structure
+
+```text
 lib/
-models/
-todo.dart              # Todo data model
-services/
-todo_storage_service.dart   # Handles saving/loading tasks
-screens/
-welcome_screen.dart    # Name entry screen
-home_screen.dart       # Main todo list screen
-widgets/
-todo_item.dart         # Individual task UI component
-theme/
-app_colors.dart        # App color palette
-main.dart                # App entry point
+├── main.dart                     # App entry point
+├── models/
+│   └── todo.dart                 # Todo data model
+├── screens/
+│   ├── home_screen.dart          # Main todo list screen
+│   └── welcome_screen.dart       # Name entry screen
+├── services/
+│   └── todo_storage_service.dart # Handles saving/loading tasks
+├── theme/
+│   └── app_colors.dart           # App color palette
+└── widgets/
+    └── todo_item.dart            # Individual task UI component
+```
 
 ## Getting Started
 
